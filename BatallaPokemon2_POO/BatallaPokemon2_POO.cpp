@@ -232,6 +232,8 @@ int main()
 {
     bool eleccion = false;
     int numeropokemon = 4;
+    int numeroeleccion = 4;
+    int victoria = 0;
     srand(time(NULL));
     Pokemon* combatiente = new Pokemon[2];
 
@@ -312,5 +314,15 @@ int main()
     combatiente[0].mostrar();
     combatiente[1].mostrar();
     combatiente[1].atacar();
+    do {
+        std::cout << "-----------------------------\n";
+        std::cout << "|    Escoge a una accion    |\n";
+        std::cout << "|       1.- Atacar          |\n";
+        std::cout << "|       2.- Curar           |\n";
+        std::cout << "-----------------------------\n";
+        switch (numeroeleccion) {
+            
+        }
+    } while (victoria != 1);
 }
 
